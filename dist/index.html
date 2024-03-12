@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="bundle.js" defer></Script>
+<link rel="stylesheet" href="./Css/main.css">
+<title> Character Weapons</title>
+</head>
+<body>
+
+    <form id="taskform" class=" rounded shadow m-5 p-5" style="width: 800px;">
+        <h1> Choose or Add Weapons</h1>
+        <label for="taskName" class="form-label">Task name: </label><br>
+        <input type="text" class="form-control" id="taskName" name="taskName" required><br>
+        
+        <label for="description" class="form-label" for="description">Description:</label><br>
+        <textarea name="description" id="description" rows="4" class="form-control" required></textarea>
+
+    <label for="deadline">Deadline</label>
+    <input type="date" id="deadline" name=" deadline" required><br>
+    
+    <label for="category">category:</label><br>
+    <select name="category" id="category" class="mb-3" required>
+        <option value="Weapons">Weapons</option>
+        <option value=" Health checkup">Health checkup</option>
+        <option value="Other">Other</option>
+    </select><br>
+
+    <button class="btn btn-sdecondary" type="submit">Add choice!</button>
+    
+    </form>
+    <h1>Task List</h1>
+    <div id="taskList">
+        <ul id="tasks"></ul>
+    </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
